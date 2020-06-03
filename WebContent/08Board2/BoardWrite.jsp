@@ -25,7 +25,7 @@ function checkValidate(frm) {
 	if(frm.title.value==""){
 		alert("제목을 입력해주세요");//경고창 띄움
 		frm.title.focus();//입력란으로 포커스 이동
-		return false;//전동되지 않도록 이벤트리스너로 false반환
+		return false;//전송되지 않도록 이벤트리스너로 false반환
 	}
 	if(frm.content.value==""){
 		alert("내용을 입력해주세요");
@@ -89,23 +89,16 @@ var checkValidate2 = function(frm){
 					</tr> -->
 				</tbody>
 				</table>
+				</form>
 			</div>
 			<div class="row mb-3">
 				<div class="col text-right">
-					<!-- 각종 버튼 부분 -->
-					<!-- <button type="button" class="btn">Basic</button> -->
-					<!-- <button type="button" class="btn btn-primary" 
-						onclick="location.href='BoardWrite.jsp';">글쓰기</button> -->
-					<!-- <button type="button" class="btn btn-secondary">수정하기</button>
-					<button type="button" class="btn btn-success">삭제하기</button>
-					<button type="button" class="btn btn-info">답글쓰기</button>
-					<button type="button" class="btn btn-light">Light</button>
-					<button type="button" class="btn btn-link">Link</button> -->
+					
 					<button type="submit" class="btn btn-danger">전송하기</button>
 					<button type="reset" class="btn btn-dark">Reset</button>
 					<button type="button" class="btn btn-warning" onclick="location.href='BoardList.jsp';">리스트보기</button>
 				</div>
-				</form>
+				
 			</div>
 		</div>
 	</div>
